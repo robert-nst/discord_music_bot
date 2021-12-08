@@ -8,6 +8,7 @@ import code         # code.interact
 import os           # environment variables
 import inspect      # call stack inspection
 import random       # dumb random number generator
+import argparse
 
 from discord.ext import commands    # Bot class and utils
 from discord import FFmpegPCMAudio
@@ -159,6 +160,9 @@ if __name__ == '__main__':
 
     # launch bot (blocking operation)
     bot.run(os.environ['BOT_TOKEN'])
+    
+parser = argparse.ArgumentParser()
+
   
 """
     Discord Music Bot
